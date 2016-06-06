@@ -4,7 +4,8 @@
  *
  * @see AltContainer
  */
-import React from 'react-native'
+import React from 'react'
+import ReactNative from 'react-native'
 import mixinContainer from './mixinContainer'
 import assign from 'object.assign'
 
@@ -12,7 +13,7 @@ const AltNativeContainer = React.createClass(assign({
   displayName: 'AltNativeContainer',
 
   render() {
-    return this.altRender(React.View)
+    return this.altRender(ReactNative.View)
   }
 }, mixinContainer(React)))
 
